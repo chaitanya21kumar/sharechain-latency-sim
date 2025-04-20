@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/chaitanyakumar/sharechain-latency-sim/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

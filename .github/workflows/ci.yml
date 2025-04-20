@@ -1,0 +1,19 @@
+name: C++ CI Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install CMake
+      run: sudo apt-get install cmake -y
+    - name: Configure and Build
+      run: |
+        mkdir build
+        cd build
+        cmake ..
+        make
+    - name: Run Simulation
+      run: ./build/sim_driver

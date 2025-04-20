@@ -1,0 +1,1 @@
+/usr/bin/clang++ -std=c++17 -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/sim_driver.dir/src/main.cpp.o CMakeFiles/sim_driver.dir/src/Node.cpp.o CMakeFiles/sim_driver.dir/src/LatencyChannel.cpp.o CMakeFiles/sim_driver.dir/src/ShareGraph.cpp.o -o sim_driver
