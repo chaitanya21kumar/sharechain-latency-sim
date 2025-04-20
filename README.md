@@ -34,7 +34,7 @@ This simulation helped me gain experience in:
 
 Below is a graph showing the share propagation status over time:
 
-![Sharechain Latency Graph](images/sharechain_latency_graph_1.png)
+![Sharechain Latency Graph](sharechain_latency_graph_1.png)
 
 The simulation shows that under moderate latency, a majority of shares are incorporated into the main chain, while some become uncles due to delayed propagation.
 
