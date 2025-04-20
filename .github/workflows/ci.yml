@@ -5,15 +5,20 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
+
     - name: Install CMake
       run: sudo apt-get install cmake -y
+
     - name: Configure and Build
       run: |
+        rm -rf build         # <=== Important new line (deletes existing build)
         mkdir build
         cd build
         cmake ..
         make
+
     - name: Run Simulation
       run: ./build/sim_driver
